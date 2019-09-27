@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Items API' do
@@ -59,7 +61,7 @@ RSpec.describe 'Items API' do
         expect(response.body).to match(/Couldn't find Item/)
       end
     end
-  end  
+  end
   # Test suite for PUT /todos/:todo_id/items
   describe 'POST /todos/:todo_id/items' do
     let(:valid_attributes) { { name: 'Visit Narnia', done: false } }
